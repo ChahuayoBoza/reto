@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my countries, your countries, our countries</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-style: normal;
+    }
+    .countries-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      padding: 24px;
+      gap: 24px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <custom-navbar></custom-navbar>
+  </header>
+  <main>
+    <div id="container" class="countries-container"></div>
+    <custom-modal id="country-modal" visible="false" continent="America"></custom-modal>
+  </main>
+  <footer>
+    <custom-footer></custom-footer>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
